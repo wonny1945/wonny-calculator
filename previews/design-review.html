@@ -1,0 +1,95 @@
+<div id="wonny-design-review" aria-label="Wonny Calculator 첫 시안">
+  <style>
+    #wonny-design-review{--wc-accent:#e8894e;color:#f0efe9;font-family:-apple-system,BlinkMacSystemFont,sans-serif}
+    #wonny-design-review *{box-sizing:border-box}
+    #wonny-design-review .wc-window{background:#232524;padding:28px;border-radius:16px}
+    #wonny-design-review .wc-header{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600}
+    #wonny-design-review .wc-dot{width:8px;height:8px;border-radius:50%;background:#68715f}
+    #wonny-design-review .wc-layout{display:flex;align-items:center;justify-content:center;gap:64px;padding:36px 0 30px;flex-wrap:wrap}
+    #wonny-design-review .wc-intro{max-width:280px}
+    #wonny-design-review .wc-eyebrow{font:11px monospace;letter-spacing:1px;color:#b7bba8}
+    #wonny-design-review h2{font-size:30px;font-weight:500;letter-spacing:-1.4px;line-height:1.45;margin:16px 0}
+    #wonny-design-review .wc-copy{font-size:13px;color:#adb0a6;line-height:1.9}
+    #wonny-design-review .wc-stage{padding:20px 12px;perspective:1400px}
+    #wonny-design-review .wc-device{width:280px;padding:20px;background:linear-gradient(125deg,#efeddf,#d4d2c0);color:#46493e;border-radius:20px;transform:rotate(-5deg) rotateX(7deg) rotateY(-9deg);box-shadow:2px 3px 0 #b9b8a6,4px 9px 0 #929684,15px 30px 45px #0006;border:1px solid #f4f3e8}
+    #wonny-design-review .wc-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;font-size:17px;font-weight:600}
+    #wonny-design-review .wc-label small{font-size:8px;letter-spacing:1px;font-weight:400;color:#72766a}
+    #wonny-design-review .wc-screen{background:linear-gradient(135deg,#c3cdb0,#d6ddc6);border:4px solid #aeb29e;border-bottom-color:#f5f3e4;border-right-color:#e7e6d7;border-radius:8px;padding:12px;box-shadow:inset 0 3px 7px #5f6c5940;margin-bottom:20px}
+    #wonny-design-review .wc-mode{font:10px monospace;color:#68755a;letter-spacing:1px}
+    #wonny-design-review output{display:block;font:40px/1.4 monospace;letter-spacing:-2px;color:#35432e;text-align:right;overflow-wrap:anywhere}
+    #wonny-design-review .wc-keys{display:grid;grid-template-columns:repeat(4,1fr);gap:12px 10px}
+    #wonny-design-review button{height:44px;font:20px monospace;color:#4d5145;background:linear-gradient(150deg,#f8f6e9,#e9e6d7);border:1px solid #faf8eb;border-radius:8px;box-shadow:0 4px 0 #b4b5a3;transition:transform .08s}
+    #wonny-design-review button:active{transform:translateY(3px);box-shadow:0 1px 0 #b4b5a3}
+    #wonny-design-review button:focus-visible{outline:3px solid #d98952;outline-offset:3px}
+    #wonny-design-review .wc-util{background:#cbd0bf;font-size:16px;border-color:#e5e8da;box-shadow:0 4px 0 #a5ad97}
+    #wonny-design-review .wc-op{background:#e0c9a9;border-color:#f3e0c5;box-shadow:0 4px 0 #b8a386}
+    #wonny-design-review .wc-equals{background:var(--wc-accent);border-color:#f7b488;box-shadow:0 4px 0 #b96333;color:#fff9ed}
+    #wonny-design-review .wc-bottom{font:8px monospace;letter-spacing:.5px;margin-top:21px;text-align:center;color:#737765}
+    @media(max-width:640px){#wonny-design-review .wc-intro{display:none}#wonny-design-review .wc-window{padding:20px 8px}#wonny-design-review .wc-header{padding-left:16px}#wonny-design-review .wc-layout{padding-top:15px;gap:0}}
+    @media(prefers-reduced-motion:reduce){#wonny-design-review button{transition:none}}
+  </style>
+  <div class="wc-window">
+    <div class="wc-header"><span class="wc-dot" aria-hidden="true"></span>wonny / calculator</div>
+    <div class="wc-layout">
+      <div class="wc-intro">
+        <div class="wc-eyebrow">A LITTLE SPACE TO THINK.</div>
+        <h2>작은 계산에도,<br>손끝의 즐거움.</h2>
+        <div class="wc-copy">익숙한 계산, 조금 다른 감각.<br>책상 위에 놓고 싶은 나만의 계산기.</div>
+      </div>
+      <div class="wc-stage">
+        <div class="wc-device" aria-label="입체 계산기">
+          <div class="wc-label"><span>wonny ®</span><small>EVERYDAY OBJECTS</small></div>
+          <div class="wc-screen"><div class="wc-mode">STANDARD</div><output aria-label="계산 결과" aria-live="polite">0</output></div>
+          <div class="wc-keys">
+            <button class="wc-util cursor-interaction" aria-label="초기화">AC</button><button class="wc-util cursor-interaction" aria-label="부호 변경">±</button><button class="wc-util cursor-interaction" aria-label="백분율">%</button><button class="wc-op cursor-interaction" aria-label="나누기">÷</button>
+            <button class="cursor-interaction">7</button><button class="cursor-interaction">8</button><button class="cursor-interaction">9</button><button class="wc-op cursor-interaction" aria-label="곱하기">×</button>
+            <button class="cursor-interaction">4</button><button class="cursor-interaction">5</button><button class="cursor-interaction">6</button><button class="wc-op cursor-interaction" aria-label="빼기">−</button>
+            <button class="cursor-interaction">1</button><button class="cursor-interaction">2</button><button class="cursor-interaction">3</button><button class="wc-op cursor-interaction" aria-label="더하기">+</button>
+            <button class="wc-util cursor-interaction" aria-label="한 자리 지우기">⌫</button><button class="cursor-interaction">0</button><button class="cursor-interaction" aria-label="소수점">.</button><button class="wc-equals cursor-interaction" aria-label="계산">=</button>
+          </div>
+          <div class="wc-bottom">DESIGNED FOR YOUR DAILY MATH.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const root = document.getElementById('wonny-design-review');
+      const output = root.querySelector('output');
+      let display = '0', left = null, operator = null, waiting = false;
+      const format = value => Number.isFinite(value) ? String(Number(value.toPrecision(12))) : 'Error';
+      const evaluate = (a, op, b) => op === '+' ? a + b : op === '−' ? a - b : op === '×' ? a * b : b === 0 ? NaN : a / b;
+      function press(key) {
+        if (key === 'AC' || display === 'Error') { display = '0'; left = null; operator = null; waiting = false; }
+        if (/^[0-9.]$/.test(key)) {
+          if (waiting) display = '0';
+          waiting = false;
+          if (key === '.') { if (!display.includes('.') && !/[eE]/.test(display)) display += '.'; }
+          else if (display.replace(/[^0-9]/g, '').length < 12) display = display === '0' ? key : display + key;
+        } else if (['+', '−', '×', '÷'].includes(key)) {
+          if (operator && !waiting) display = format(evaluate(left, operator, Number(display)));
+          if (display !== 'Error') { left = Number(display); operator = key; waiting = true; }
+        } else if (key === '=' && operator && !waiting) {
+          display = format(evaluate(left, operator, Number(display))); operator = null; waiting = true;
+        } else if (key === '±') display = format(-Number(display));
+        else if (key === '%') display = format(Number(display) / 100);
+        else if (key === '⌫' && !waiting) { display = display.slice(0, -1); if (!display || display === '-') display = '0'; }
+        output.textContent = display;
+        output.style.fontSize = display.length > 9 ? '25px' : '40px';
+      }
+      root.querySelectorAll('button').forEach(button => button.addEventListener('click', () => press(button.textContent)));
+      const design = { accent: '#e8894e', angle: -5 };
+      const device = root.querySelector('.wc-device');
+      function renderDesign() {
+        root.style.setProperty('--wc-accent', design.accent);
+        device.style.transform = `rotate(${design.angle}deg) rotateX(7deg) rotateY(-9deg)`;
+      }
+      renderDesign();
+      if (globalThis.Tweak) {
+        const tweak = new Tweak({ container: device, onChange: renderDesign });
+        tweak.addColorPicker(design, 'accent', { label: '계산 키 색상' });
+        tweak.addSlider(design, 'angle', { label: '본체 기울기', min: -10, max: 0, unit: '°' });
+      }
+    })();
+  </script>
+</div>

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Wonny Calculator",
+  "version": "0.1.0",
+  "identifier": "com.wonny1945.calculator",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "macOSPrivateApi": true,
+    "windows": [
+      {
+        "title": "Wonny Calculator",
+        "width": 360,
+        "height": 560,
+        "minWidth": 360,
+        "minHeight": 560,
+        "backgroundColor": "#00000000",
+        "transparent": true,
+        "resizable": false,
+        "maximizable": false,
+        "decorations": false
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' ipc: http://ipc.localhost"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "app",
+      "dmg"
+    ],
+    "icon": [
+      "icons/icon.png"
+    ],
+    "category": "Utility",
+    "shortDescription": "A tactile everyday calculator",
+    "macOS": {
+      "minimumSystemVersion": "11.0"
+    }
+  }
+}
