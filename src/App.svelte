@@ -61,7 +61,7 @@
           <button class="window-control close" aria-label="앱 닫기" onclick={() => windowAction('close')}></button>
           <button class="window-control minimize" aria-label="최소화" onclick={() => windowAction('minimize')}></button>
           <button class="window-control expand" aria-label={big ? '일반 크기로 전환' : '큰 크기로 전환'} aria-pressed={big} onclick={() => windowAction('expand')}></button>
-          <div class="theme-switch" role="group" aria-label="색상 테마">
+          <div class="theme-switch" role="group" aria-label="색상 테마" style:--theme-position={['ivory', 'sage', 'midnight'].indexOf(theme)}>
             {#each [['ivory', '아이보리'], ['sage', '세이지'], ['midnight', '미드나이트']] as [value, label]}
               <button class="theme-stop {value}" class:active={theme === value} aria-label={label} aria-pressed={theme === value} onclick={() => { theme = value; saveTheme(); }}><span></span></button>
             {/each}
