@@ -6,11 +6,18 @@ Claude Code 기반으로 개발해 온 개발자가 **Codex의 기능과 개발 
 
 ## 앱 화면
 
-macOS에서 실행한 실제 앱 화면입니다. Ivory 테마에서 계산 결과 `40`이 표시되어 있습니다.
+Codex로 개발한 앱과, 공유한 프롬프트를 사용해 Claude Code가 별도로 만든 앱의 화면입니다. 두 이미지는 사용자가 제공한 실행 화면이며, 시각적 결과 비교용입니다. 기능 정확도나 개발 성능을 평가한 결과는 아닙니다.
 
-<p align="center">
-  <img src="docs/images/wonny-calculator.png" alt="macOS에서 실행 중인 Wonny Calculator: 둥근 아이보리 본체, 색상 선택 스위치, 입체 키와 계산 결과 40" width="406" />
-</p>
+<table>
+  <tr>
+    <th>Codex</th>
+    <th>Claude Code</th>
+  </tr>
+  <tr>
+    <td valign="top"><img src="docs/images/wonny-calculator.png" alt="Codex로 만든 Wonny Calculator: 아이보리 본체와 계산 결과 40" width="360" /></td>
+    <td valign="top"><img src="docs/images/claude-code-calculator.png" alt="Claude Code로 만든 계산기: 아날로그 색상 스위치, 어두운 연산 키와 표시값 500,000,000,000" width="360" /></td>
+  </tr>
+</table>
 
 ## 첫 번째 단계 · v0.1
 
