@@ -10,12 +10,12 @@ Codex로 개발한 앱과, 공유한 프롬프트를 사용해 Claude Code가 �
 
 <table>
   <tr>
-    <th>Codex</th>
-    <th>Claude Code</th>
+    <th width="50%">Codex</th>
+    <th width="50%">Claude Code</th>
   </tr>
   <tr>
-    <td valign="top"><img src="docs/images/wonny-calculator.png" alt="Codex로 만든 Wonny Calculator: 아이보리 본체와 계산 결과 40" width="360" /></td>
-    <td valign="top"><img src="docs/images/claude-code-calculator.png" alt="Claude Code로 만든 계산기: 아날로그 색상 스위치, 어두운 연산 키와 표시값 500,000,000,000" width="360" /></td>
+    <td align="center" valign="top"><img src="docs/images/wonny-calculator.png" alt="Codex로 만든 Wonny Calculator: 아이보리 본체와 계산 결과 40" height="500" /></td>
+    <td align="center" valign="top"><img src="docs/images/claude-code-calculator.png" alt="Claude Code로 만든 계산기: 아날로그 색상 스위치, 어두운 연산 키와 표시값 500,000,000,000" height="500" /></td>
   </tr>
 </table>
 
